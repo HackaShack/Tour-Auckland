@@ -1,2 +1,2 @@
-Tour-Auckland
+Tour-AKL
 =============
