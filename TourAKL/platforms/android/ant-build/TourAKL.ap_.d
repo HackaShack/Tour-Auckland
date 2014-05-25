@@ -9,7 +9,8 @@ C:\Users\Jonathon\Documents\GitHub\Tour-Auckland\TourAKL\platforms\android\asset
 C:\Users\Jonathon\Documents\GitHub\Tour-Auckland\TourAKL\platforms\android\assets\www\cordova.js \
 C:\Users\Jonathon\Documents\GitHub\Tour-Auckland\TourAKL\platforms\android\assets\www\cordova_plugins.js \
 C:\Users\Jonathon\Documents\GitHub\Tour-Auckland\TourAKL\platforms\android\assets\www\css \
-C:\Users\Jonathon\Documents\GitHub\Tour-Auckland\TourAKL\platforms\android\assets\www\icon.jpg \
+C:\Users\Jonathon\Documents\GitHub\Tour-Auckland\TourAKL\platforms\android\assets\www\icon.png \
+C:\Users\Jonathon\Documents\GitHub\Tour-Auckland\TourAKL\platforms\android\assets\www\icon_bak.jpg \
 C:\Users\Jonathon\Documents\GitHub\Tour-Auckland\TourAKL\platforms\android\assets\www\icon_bak.png \
 C:\Users\Jonathon\Documents\GitHub\Tour-Auckland\TourAKL\platforms\android\assets\www\img \
 C:\Users\Jonathon\Documents\GitHub\Tour-Auckland\TourAKL\platforms\android\assets\www\index.html \
