@@ -51,12 +51,52 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_FILES['image'])) {
 		<meta name="DC.language" content="en" />
 
 
+<script type="text/javascript">
+var popbackground="white" //specify backcolor or background image for pop window
+var windowtitle="Image Window"  //pop window title
+
+function detectexist(obj){
+return (typeof obj !="undefined")
+}
+
+function jkpopimage(imgpath, popwidth, popheight, textdescription){
+	popwidth = 325;
+	popheight = 445;
+	textdescription = 'Photo';
+
+function getpos(){
+leftpos=(detectexist(window.screenLeft))? screenLeft+document.body.clientWidth/2-popwidth/2 : detectexist(window.screenX)? screenX+innerWidth/2-popwidth/2 : 0;
+toppos=(detectexist(window.screenTop))? screenTop+document.body.clientHeight/2-popheight/2 : detectexist(window.screenY)? screenY+innerHeight/2-popheight/2 : 0;
+
+if (window.opera){
+leftpos-=screenLeft;
+toppos-=screenTop;
+} 
 
 	
-	<script type="text/javascript" src="js/modernizr-2.0.6/modernizr.min.js"></script>
+}
 
-	<style>
-		
+
+getpos();
+var winattributes='width='+popwidth+',height='+popheight+',resizable=yes,left='+leftpos+',top='+toppos;
+var bodyattribute=(popbackground.indexOf(".")!=-1)? 'background="'+popbackground+'"' : 'bgcolor="'+popbackground+'"';
+if (typeof jkpopwin=="undefined" || jkpopwin.closed){
+jkpopwin=window.open("","",winattributes)
+}else{
+//getpos() //uncomment these 2 lines if you wish subsequent popups to be centered too
+//jkpopwin.moveTo(leftpos, toppos)
+jkpopwin.resizeTo(popwidth, popheight+30)
+}
+
+jkpopwin.document.open();
+jkpopwin.document.write('<html><title>'+windowtitle+'</title><body '+bodyattribute+'><img src="uploads/250x250_'+imgpath+'" style="margin-bottom: 0.5em;text-align: center"><br />'+textdescription+'<input type="button" value="Vote" onclick="alert(1)"></body></html>');
+jkpopwin.document.close();
+jkpopwin.focus();
+	return false;
+}
+
+</script>
+	<style>	
 		html{height: 100% }
 		body{height: 100%; margin:0;padding:0 }
 				
@@ -99,6 +139,7 @@ div.upload input {
     <label>    
 	<div class="upload">	
       <input type="file" onchange="this.form.submit();" name="image" accept="image/*" />
+      
 	 </div>
     </label>
     

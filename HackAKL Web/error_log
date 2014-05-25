@@ -18,3 +18,5 @@
 [22-May-2014 23:30:23 America/Chicago] PHP Parse error:  syntax error, unexpected ':' in /home/webappcr/public_html/tourauckland.webappcreator.net/index.php on line 30
 [22-May-2014 23:31:45 America/Chicago] PHP Warning:  array_keys() expects parameter 1 to be array, string given in /home/webappcr/public_html/tourauckland.webappcreator.net/meekrodb.2.2.class.php on line 304
 [22-May-2014 23:31:45 America/Chicago] PHP Warning:  array_values() expects parameter 1 to be array, string given in /home/webappcr/public_html/tourauckland.webappcreator.net/meekrodb.2.2.class.php on line 305
+[23-May-2014 21:10:40 America/Chicago] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/webappcr/public_html/tourauckland.webappcreator.net/imagesJSON.php on line 22
+[23-May-2014 21:10:57 America/Chicago] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/webappcr/public_html/tourauckland.webappcreator.net/imagesJSON.php on line 21

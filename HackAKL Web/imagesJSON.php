@@ -18,7 +18,13 @@ foreach ($results as $row) {
   	$term = ',';  
   }
    
-  print '{"latitude":' . $row['latitude']  . ',"longitude":' . $row['longitude'] .  ',"icon":"uploads/32x32_' . $row['imagename'] . '","title":"' . "Photo"  . '","content":"' . "<img src='uploads/100x100_" .  $row['imagename'] ."'><br>Uploaded by ".  $row['device_id'] . '"' . '}' . $term;
+   if (empty($row['latitude']) || empty($row['longitude'])){
+   	   
+   } else {
+   
+  print '{"latitude":' . $row['latitude']  . ',"longitude":' . $row['longitude'] .  ',"icon":"uploads/32x32_' . $row['imagename'] . '","title":"' . "Photo"  . '","content":"' .   "<a href='#' onClick=jkpopimage('" . trim($row['imagename']) . "');><img src='uploads/100x100_" .  $row['imagename'] ."'></a><br>Uploaded by ".  $row['device_id'] . '"' . '}' . $term;
+ 
+   }
 }	
 	
 #print json_encode ($results);
